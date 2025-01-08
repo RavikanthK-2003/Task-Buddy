@@ -25,6 +25,10 @@ function App() {
     setTasks(tasks.filter((_, i) => i !== index));
   };
 
+  const clearTasks = () => {
+    setTasks([]);
+  }
+
   return (
     <div className="App">
       <header className="bg-gray-900 py-6 px-4 shadow-md">
@@ -41,6 +45,7 @@ function App() {
         updateTask={updateTask}
         deleteTask={deleteTask}
       />
+      {tasks.length>0 && (<button className="clear-btn" onClick={clearTasks}>Clear All Tasks</button>)}
     </div>
   )
 }
