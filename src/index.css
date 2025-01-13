@@ -1,8 +1,5 @@
-/* General form styling */
-/* General container styles */
-
 body {
-  background-color: black;
+  background-color: rgb(10, 9, 9);
 }
 .icon-completed {
   color: #4caf50;
@@ -83,7 +80,7 @@ body {
 
 
 .task-form {
-  margin-bottom: 2rem; /* Matches Tailwind's mb-8 */
+  margin: 2rem; /* Matches Tailwind's mb-8 */
 }
 
 /* Input container */
@@ -107,7 +104,7 @@ body {
   border: none;
   outline: none;
   font-size: 1rem;
-  placeholder-color: #6b7280; /* Matches Tailwind's placeholder-gray-500 */
+  /* placeholder-color: #6b7280; Matches Tailwind's placeholder-gray-500 */
 }
 
 /* Submit button */
@@ -220,15 +217,15 @@ h1 {
 .task-form {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 50px;
+  /* margin-bottom: 20px; */
 }
 
 .task-form input,
 .task-form select,
 .task-form button {
-  padding: 10px;
-  border: 2px solid #6c757d; /* Neutral border */
+  padding: 5px;
+  /* border: 2px solid #6c757d; Neutral border */
   border-radius: 5px;
   background-color: #f9f9f9; /* Light background for inputs */
   color: #333; /* Dark text for readability */
@@ -236,7 +233,7 @@ h1 {
 }
 
 .task-form button {
-  background-color:  #5df7d8; /* Green for action buttons */
+  background-color:  #e8d90d; /* Green for action buttons */
   color: black;
   font-weight: bold;
   cursor: pointer;
@@ -250,24 +247,31 @@ h1 {
 .task-list {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .task-list li {
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  align-items: center;
+  padding: 10px;
   border: 0px solid #6c757d; /* Neutral border for tasks */
   margin: 10px 0;
   border-radius: 10px;
-  background-color: #353535; /* Subtle navy background for tasks */
-  color: #e4e4e4; /* Light text for contrast */
+  background-color: grey; /* Subtle navy background for tasks */
+  color: snow; /* Light text for contrast */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
+  /* transition: transform 0.2s ease; */
 }
 
 .task-list li:hover {
-  transform: scale(1.02); /* Slight zoom effect */
-  background-color: #5b5a5a;
+  /* transform: scale(1.02); Slight zoom effect */
+  color: black;
+  background-color: snow;
 }
 
 .task-list li.completed {
@@ -281,7 +285,7 @@ h1 {
   color: #ffdf8b; /* Brand color for buttons */
   font-size: 1rem;
   cursor: pointer;
-  transition: color 0.3s ease;
+  /* transition: color 0.3s ease; */
 }
 
 .task-list button:hover {

@@ -2,7 +2,7 @@ import TaskForm from "./components/TaskForm"
 import TaskList from "./components/TaskList"
 import ProgressTracker from "./components/ProgressTracker"
 import { useEffect, useState } from "react";
-import './style.css';
+import './index.css';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="bg-gray-900 py-6 px-4 shadow-md">
+      <header className="bg-gray-900 py-8 px-4 shadow-md">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <h1 className="text-4xl font-bold text-white">
             Task<span className="text-yellow-400">Buddy</span>
