@@ -31,12 +31,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="bg-gray-900 py-8 px-4 shadow-md">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <h1 className="text-4xl font-bold text-white">
-            Task<span className="text-yellow-400">Buddy</span>
-          </h1>
-          <p className="text-gray-400 italic">Your friendly task manager</p>
+      <header>
+        <div>
+          <h1>Task<span>Buddy</span></h1>
+          <p>Your friendly task manager</p>
         </div>
       </header>
       <TaskForm addTask={addTask}/>

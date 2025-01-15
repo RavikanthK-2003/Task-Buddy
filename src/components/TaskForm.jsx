@@ -25,7 +25,7 @@ export default function TaskForm({addTask}) {
         />
         <button type='submit'>ADD TASK</button>
       </div>
-      <div id='btns'>
+      <div className='select-btns'>
         <select onChange={(e) => setPriority(e.target.value)}>
           <option value="High">High</option>
           <option value="Medium">Medium</option>
